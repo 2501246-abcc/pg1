@@ -1,0 +1,111 @@
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: sans-serif;
+  background: #f0f0f0;
+  transform-origin: top;
+  transform: scale(0.9);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  height: 85vh;
+}
+
+/* 左：カレンダー */
+.calendarArea {
+  width: 260px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  transform: scale(0.9);
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.day:hover {
+  background: #ddd;
+}
+
+/* 右：家計簿 */
+.logArea {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#list {
+  margin-top: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+}
+
+.reset-btn {
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  color: white;
+
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+  box-shadow: 0 6px 0 #e04848;
+  transition: all 0.15s ease;
+}
+
+/* ホバー */
+.reset-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #e04848;
+  opacity: 0.95;
+}
+
+/* 押したとき */
+.reset-btn:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 #e04848;
+}
+
