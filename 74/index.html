@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>楽しい家計簿管理DX</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+  <h1>楽しい家計簿管理DX</h1>
+  <button onclick="resetStorage()" class="reset-btn">データをリセット</button>
+<div class="container">
+  <div class="calendarArea">
+    <h3 id="calendarTitle"></h3>
+    <div id="calendar"></div>
+  </div>
+  <div class="logArea">
+    <div id="budgetArea">
+      <input type="number" id="budgetInput" placeholder="今月の予算">
+      <button onclick="settei()">予算を設定</button>
+    </div>
+    <p>選択中の日付：
+      <strong id="selectedDate"></strong>
+    </p>
+    <p>残り：<strong id="remaining">---</strong> 円</p>
+    <div class="row">
+      <input id="item" placeholder="内容">
+      <input id="amount" type="number" placeholder="金額">
+    </div>
+    <button onclick="tuika()">追加</button>
+    <ul id="list"></ul>
+  </div>
+</div>
+<small>2501246 木本泰聖</small>
+https://github.com/2501246-abcc/pg1
+</body>
+</html>
