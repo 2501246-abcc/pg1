@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>楽しい家計簿管理DX</title>
+<link rel="stylesheet" href="css/style.css" />
+ <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+    <body>
+        <div class="container">
+          <h1>楽しい家計簿管理DX</h1>
+
+          <div id="budgetArea">
+                <input type="number" id="budgetInput" placeholder="1か月の予算">
+            <button onclick="settei()">予算を設定</button>
+          </div>
+
+          <p>残り使える金額：<strong id="remaining">---</strong> 円</p>
+
+          <div class="row">
+            <input type="text" id="item" placeholder="内容">
+            <input type="number" id="amount" placeholder="金額">
+          </div>
+          <button onclick="tuika()">追加</button>
+
+          <ul id="list"></ul>
+        </div>
+        <small>2501246 木本泰聖</small>
+    </body>
+</html>
